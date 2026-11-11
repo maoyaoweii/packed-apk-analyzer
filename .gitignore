@@ -1,0 +1,28 @@
+# 编译产物与本地输出
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 分析输出目录（每个案子的产物都不该进仓库）
+out/
+out_test/
+run.log
+*.log
+
+# 分析用的 APK 本身（几百 MB，绝不入库）
+*.apk
+*.apk.*
+base.apk*
+classes*.dex
+resources.arsc
+AndroidManifest.xml
+
+# 反编译 / 工具
+jadx/
+jadx.zip
+tools/
+
+# 编辑器
+.idea/
+.vscode/
+.DS_Store
