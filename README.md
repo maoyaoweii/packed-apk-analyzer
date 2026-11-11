@@ -182,11 +182,22 @@ BaseDexClassLoader.<init>
 
 ---
 
+## 两个工具
+
+| 脚本 | 用途 |
+|---|---|
+| [`apk_analyze.py`](apk_analyze.py) | 主程序：Manifest / arsc / DEX 结构 / 加固识别 / 壳字符串还原 |
+| [`deep_carve.py`](deep_carve.py) | 深挖：按顺序解析 DEX `string_data`，系统性还原字符串池并给全部类做功能分类 |
+
+详见 [`docs/deep-carve.md`](docs/deep-carve.md)。
+
 ## 文件说明
 
 ```
-apk_analyze.py    主程序（单文件，约 800 行）
-docs/             案例与笔记
+apk_analyze.py    主程序（单文件，约 770 行）
+deep_carve.py     字符串池还原 + 源码地图（约 300 行）
+tests/            38 项自测
+docs/             案例、深挖笔记、源码地图摘要
 ```
 
 ## 许可
